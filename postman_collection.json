@@ -1,0 +1,40 @@
+{
+  "info": {
+    "name": "BFHL FastAPI",
+    "_postman_id": "bfhl-fastapi-collection",
+    "description": "Collection to test /bfhl",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Local /bfhl",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://127.0.0.1:8000/bfhl",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "bfhl"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"data\": [\"2\", \"a\", \"y\", \"4\", \"&\", \"-\", \"*\", \"5\", \"92\", \"b\"]}"
+        }
+      }
+    }
+  ]
+}
